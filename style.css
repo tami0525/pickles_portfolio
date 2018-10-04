@@ -1,7 +1,138 @@
+/*全体設定*/
 @charset "UTF-8";
+
+@keyframes RightToLeft {
+  0% {
+    opacity: 0;/* 透明 */
+    transform: translateX(50px);/* X軸方向に50px */
+  }
+  100% {
+    opacity: 1;/* 不透明 */
+    transform: translateX(0);
+  }
+}
 /*ヘッダー部分のプロバティ*/
 
 /*コンテンツ１のプロバティ*/
+.contents1-container{
+  width:flex;
+  text-align: center;
+  margin-top:50px;
+}
+
+.con1-p{
+  font-family:monospace;
+  font-size: 20px;
+}
+
+.con1-title{
+  color:#444;
+  font-size: 30px;
+  display:flex;
+  align-items: center;
+}
+
+
+.con1-title:before,.con1-title:after{
+  content:"";
+  flex-grow: 1;
+  height:3px;
+  background:#444;
+  display:block;
+  
+}
+
+.con1-title:before{
+margin-right: .4em;
+}
+
+.con1-title:after{
+margin-left: .4em;
+}
+
+.viewmore{
+  position:relative;
+  font-size:26px;
+  display:inline-block;
+  padding:1px 30px;
+  background: black;
+  color:white;
+  text-decoration: none;
+  border:2px solid black;
+  border-radius: 15px;
+  margin-bottom:50px;
+}
+
+.viewmore::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: 'VIEW MORE';
+  width: 100%;
+  height: 100%;
+  background: white;
+  color:black;
+  border-radius: 12px;
+  overflow: hidden;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.viewmore:hover::before {
+  height: 0;
+}
+
+.photo-wrap{
+  height:700px;
+}
+
+
+
+.main-photo{
+  position:absolute;
+  display:inline;
+  animation-duration: 0.7s;
+  animation-name: RightToLeft;
+}
+
+.sub1 {
+  position:relative;
+  top:0px;
+  left:62%;
+  display:inline;
+  animation-duration: 1s;
+  animation-name: RightToLeft;
+}
+
+.sub2 {
+  position:relative;
+  top:100px;
+  left:63.5%;
+  display:inline;
+  animation-duration: 1s;
+  animation-name: RightToLeft;
+}
+
+.sub3 {
+  position:relative;
+  top:200px;
+  left:24.9%;
+  display:inline;
+  animation-duration: 1.2s;
+  animation-name: RightToLeft;
+}
+
+.sub4 {
+  position:relative;
+  top:300px;
+  left:26.5%;
+  display:inline;
+  animation-duration: 1.4s;
+  animation-name: RightToLeft;
+}
 
 /*スクロール画像部分のプロバティ*/
 
