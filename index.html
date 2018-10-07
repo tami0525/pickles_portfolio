@@ -4,6 +4,32 @@
     <meta charset="utf-8">
     <title>pickles-portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    </script>
+    <script>
+      $(window).scroll(function (){
+      	$(".animationleft").each(function(){
+      	  var position = $(this).offset().top; //ページの一番上から要素までの距離を取得
+      	  var scroll = $(window).scrollTop(); //スクロールの位置を取得
+      	  var windowHeight = $(window).height(); //ウインドウの高さを取得
+      	  if (scroll > position - windowHeight){ //スクロール位置が要素の位置を過ぎたとき
+      	    $(this).addClass('active'); //クラス「active」を与える
+      	  }
+      	});
+      });
+
+      $(window).scroll(function (){
+      	$(".animationright").each(function(){
+      	  var position = $(this).offset().top; //ページの一番上から要素までの距離を取得
+      	  var scroll = $(window).scrollTop(); //スクロールの位置を取得
+      	  var windowHeight = $(window).height(); //ウインドウの高さを取得
+      	  if (scroll > position - windowHeight){ //スクロール位置が要素の位置を過ぎたとき
+      	    $(this).addClass('active'); //クラス「active」を与える
+      	  }
+      	});
+      });
+    </script>
+
   </head>
   <body>
     <!--header部分-->
@@ -33,6 +59,28 @@
     <!--スクロール画像部分-->
 
     <!--コンテンツ２部分-->
+    <div class="contents2">
+          <div class="introduction">
+            <div class="explain">
+              <h1 class="con1-title">MEMBERS</h1>
+              <p class="con1-answer">
+                医療従事者による<br>
+                プログラミングチームです
+              </p>
+              <a class="viewmore" href="#">VIEW MORE</a>
+            </div>
+            <img src="img/pickleslogo.png" class="pickles_logo animationleft">
+            <img src="img/REN.jpg" class="ren_logo animationright">
+            <img src="img/tamio.jpg" class="tamio_logo animationright">
+            <img src="img/morijun.jpg" class="morijun_logo animationright">
+            <img src="img/sho-ti.jpg" class="sho-ti_logo animationright">
+            <img src="img/SO.jpg" class="SO_logo animationright">
+            <div class="ren name animationright">REN</div>
+            <div class="tamio name animationright">たみお</div>
+            <div class="morijun name animationright">もりじゅん</div>
+            <div class="sho-ti name animationright">しょーち</div>
+            <div class="SO name animationright">S.O</div>
+    </div>
 
     <!--コンテンツ３部分-->
 
