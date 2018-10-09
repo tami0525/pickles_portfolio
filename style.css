@@ -18,6 +18,8 @@
   width:flex;
   text-align: center;
   margin-top:50px;
+  padding-left:70px;
+  padding-right:70px;
 }
 
 .con1-p{
@@ -87,6 +89,8 @@ margin-left: .4em;
 
 .photo-wrap{
   height:700px;
+  padding-left:70px;
+  padding-right:70px;
 }
 
 
