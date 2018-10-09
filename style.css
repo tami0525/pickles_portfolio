@@ -141,6 +141,129 @@ margin-left: .4em;
 /*スクロール画像部分のプロバティ*/
 
 /*コンテンツ２のプロバティ*/
+.contents2{
+  text-align: center;
+}
+
+.introduction {
+    width:100vw;
+    height:100vh;
+    max-width: 960px;
+    max-height: 480px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 3fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+}
+
+.explain{
+  grid-column: 1 / 2 ;
+  grid-row: 1 / 3;
+}
+
+.pickles_logo{
+    display: block;
+    grid-column: 1 / 2 ;
+    grid-row: 3 / 6;
+    margin:auto;
+    width: 60%;
+}
+.ren{
+    grid-column: 2 / 3 ;
+    grid-row: 1 / 2;
+}
+
+.ren_logo{
+    grid-column: 3 / 4 ;
+    grid-row: 1 / 2;
+    width: 75%;
+}
+
+.tamio{
+    grid-column: 2 / 3 ;
+    grid-row: 2 / 3;
+}
+
+.tamio_logo{
+    grid-column: 3 / 4 ;
+    grid-row: 2 / 3;
+    width: 75%;
+    margin:auto 8%;
+}
+
+.morijun{
+    grid-column: 2 / 3 ;
+    grid-row: 3 / 4;
+}
+
+.morijun_logo{
+    grid-column: 3 / 4 ;
+    grid-row: 3 / 4;
+    width: 75%;
+    margin:auto 16%;
+}
+
+.sho-ti{
+    grid-column: 2 / 3 ;
+    grid-row: 4 / 5;
+}
+
+.sho-ti_logo{
+    grid-column: 3 / 4 ;
+    grid-row: 4 / 5;
+    width: 75%;
+    margin:auto 24%;
+}
+
+.SO{
+    grid-column: 2 / 3 ;
+    grid-row: 5 / 6;
+}
+
+.SO_logo{
+    grid-column: 3 / 4 ;
+    grid-row: 5 / 6;
+    width: 75%;
+    margin:auto 32%;
+}
+
+.name{
+    font-size: 3rem;
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+}
+
+.animationleft{
+    opacity: 0;
+    -webkit-transform: translateX(-200px);
+    transform: translateX(-200px);
+    -webkit-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+    float: left;
+}
+
+.animationleft.active{
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.animationright{
+    opacity: 0;
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+    -webkit-transition: all 3s ease;
+    transition: all 3s ease;
+    float: right;
+}
+
+.animationright.active{
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
 
 /*コンテンツ３のプロバティ*/
 
