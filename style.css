@@ -346,6 +346,48 @@ margin-left: .4em;
 }
 
 /*コンテンツ３のプロバティ*/
+.contents3-container{
+  width:flex;
+  text-align: center;
+  margin-top:50px;
+  padding-left:70px;
+  padding-right:70px;
+}
+
+.con3-p{
+  font-family:monospace;
+  font-size: 20px;
+}
+
+.con3-title{
+  color:#444;
+  font-size: 30px;
+  display:flex;
+  align-items: center;
+}
+
+
+.con3-title:before,.con3-title:after{
+  content:"";
+  flex-grow: 1;
+  height:3px;
+  background:#444;
+  display:block;
+  
+}
+
+.con3-title:before{
+margin-right: .4em;
+}
+
+.con3-title:after{
+margin-left: .4em;
+}
+
+.skill.photo p{
+ display:inline-block;
+ vertical-align:left;
+}
 
 /*コンテンツ４のプロバティ*/
 .contents4{
