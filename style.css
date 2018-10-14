@@ -390,7 +390,62 @@ margin-right: .4em;
 margin-left: .4em;
 }
 
+.skill.photo p{
+ display:inline-block;
+ vertical-align:left;
+}
 
 /*コンテンツ４のプロバティ*/
+.contents4{
+text-align: center;
+}
 
+.contents-docs{
+  width:100vw;
+  height:100vh;
+  max-width: 960px;
+  max-height: 400px;
+  grid-gap: 5px;
+  display:grid;
+  grid-template-columns:3fr 3fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  text-align: center;
+  margin: 0 auto;
+}
+.doc1{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: rgb(20, 250, 29);
+}
+
+.doc2{
+  grid-column: 2/2;
+  grid-row: 1/2;
+  background-color: rgb(20, 167, 250);
+}
+
+.pic1{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: rgb(238, 250, 20);
+}
+
+.pic2{
+  grid-column: 2/2;
+  grid-row: 2/3;
+  background-color: rgb(250, 123, 20);
+}
+
+.website1{
+  grid-column: 1/2;
+  grid-row: 3/4;
+  background-color:rgb(247, 14, 31)
+}
+
+.website2{
+  grid-column: 2/3;
+  grid-row: 3/4;
+  background-color:rgb(199, 48, 245)
+
+}
 /*フッター部分のプロバティ*/
