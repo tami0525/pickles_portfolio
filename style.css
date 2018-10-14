@@ -121,7 +121,6 @@ body{
   height:3px;
   background:#444;
   display:block;
-  
 }
 
 .con1-title:before{
@@ -396,7 +395,7 @@ margin-left: .4em;
 }
 
 /*コンテンツ４のプロバティ*/
-.contents4{
+.contents4{
 text-align: center;
 }
 
