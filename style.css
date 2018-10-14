@@ -392,7 +392,6 @@ margin-left: .4em;
 /*コンテンツ４のプロバティ*/
 .contents4{
 text-align: center;
-
 }
 
 .contents-docs{
@@ -405,6 +404,7 @@ text-align: center;
   grid-template-columns:3fr 3fr;
   grid-template-rows: 1fr 2fr 1fr;
   text-align: center;
+  margin: 0 auto;
 }
 .doc1{
   grid-column: 1/2;
