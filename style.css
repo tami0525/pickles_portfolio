@@ -355,17 +355,6 @@ margin-left: .4em;
   font-size: 20px;
 }
 
-.contents3-container:before {
-    border-top: 1px solid;
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-}
-
-
-
 .con3-title{
   color:#444;
   font-size: 30px;
