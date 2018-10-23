@@ -358,6 +358,8 @@ margin-left: .4em;
 .contents3-container{
   position: relative;
  text-align: center;
+ padding-left: 70px;
+ padding-right: 70px;
 }
 
 .con3-p{
@@ -396,13 +398,40 @@ margin-left: .4em;
 /*コンテンツ４のプロバティ*/
 .contents4{
 text-align: center;
+padding-left: 70px;
+padding-right: 70px;
 }
+
+.con4-title{
+  color:#444;
+  font-size: 30px;
+  display:flex;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.con4-title:before,.con4-title:after{
+  content:"";
+  flex-grow: 1;
+  height:3px;
+  background:#444;
+  display:block;
+}
+
+.con4-title:before{
+margin-right: .4em;
+}
+
+.con4-title:after{
+margin-left: .4em;
+}
+
 
 .contents-docs{
   width:100vw;
   height:100vh;
   max-width: 960px;
-  max-height: 400px;
+  max-height: 600px;
   grid-gap: 5px;
   display:grid;
   grid-template-columns:3fr 3fr;
