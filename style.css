@@ -16,9 +16,6 @@ body{
   margin:0;
 }
 /*ヘッダー部分のプロバティ*/
-.inner{
-  display:block;
-}
 
 .logo {
     width: 150px;
@@ -48,6 +45,7 @@ body{
     margin: 0 19px;
 }
 /*トップ画*/
+
 .index-main-visual img{
   max-width: 100%;
   padding: 0;
@@ -87,8 +85,11 @@ body{
   padding-top:12px;
   padding-bottom: 0;
   position:absolute;
-  top:440px;
-  left:650px;
+  top:150px;
+  right: 0;
+  bottom:0;
+  left:0;
+  margin:auto;
   z-index:9999;
   transition:opacity 0.3s ease;
 }
