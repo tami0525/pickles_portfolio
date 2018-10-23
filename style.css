@@ -441,33 +441,57 @@ margin-left: .4em;
 .doc1{
   grid-column: 1/2;
   grid-row: 1/2;
-  border:2px solid rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
 }
 
 .doc2{
   grid-column: 2/3;
   grid-row: 1/2;
-  border:2px solid rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
 }
 
 .doc3{
   grid-column: 3/4;
   grid-row: 1/2;
-  border:2px solid rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
 }
 
 .doc4{
   grid-column: 4/5;
   grid-row: 1/2;
-  border:2px solid rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
 }
 
 .doc5{
   grid-column: 5/6;
   grid-row: 1/2;
-  border:2px solid rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
 }
 
+.followRen{
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.followTamio{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.followMorijun{
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.followSho-chi{
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+.followSO{
+  grid-column: 5/6;
+  grid-row: 2/3;
+}
 /*フッター部分のプロバティ*/
 .footer{
   text-align: center;
