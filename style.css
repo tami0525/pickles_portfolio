@@ -103,9 +103,9 @@ body{
 .contents1-container{
   width:flex;
   text-align: center;
-  margin-top:50px;
-  padding-left:70px;
-  padding-right:70px;
+  margin-top: 50px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .con1-p{
@@ -139,15 +139,15 @@ margin-left: .4em;
 
 .viewmore{
   position:relative;
-  font-size:26px;
+  font-size: 26px;
   display:inline-block;
-  padding:1px 30px;
+  padding: 1px 30px;
   background: black;
   color:white;
   text-decoration: none;
-  border:2px solid black;
+  border: 2px solid black;
   border-radius: 15px;
-  margin-bottom:50px;
+  margin-bottom: 50px;
 }
 
 .viewmore::before{
@@ -173,61 +173,171 @@ margin-left: .4em;
 }
 
 .photo-wrap{
-  height:700px;
-  padding-left:70px;
-  padding-right:70px;
+  max-width: 960px;
+  min-width: 380px;
+  height: 400px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 20%;
+  position: relative;
 }
 
-
+.photo-wrap img{
+  border-radius: 30px 5px;
+  border: 2px solid rgb(167, 179, 248);
+}
 
 .main-photo{
-  position:absolute;
-  display:inline;
   animation-duration: 0.7s;
   animation-name: RightToLeft;
 }
 
 .sub1 {
-  position:relative;
-  top:0px;
-  left:62%;
-  display:inline;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  width: 25%;
   animation-duration: 1s;
   animation-name: RightToLeft;
 }
 
 .sub2 {
-  position:relative;
-  top:100px;
-  left:63.5%;
-  display:inline;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 25%;
   animation-duration: 1s;
   animation-name: RightToLeft;
 }
 
 .sub3 {
-  position:relative;
-  top:200px;
-  left:24.9%;
-  display:inline;
+  position: absolute;
+  top: 80%;
+  left: 14%;
+  width: 25%;
   animation-duration: 1.2s;
   animation-name: RightToLeft;
 }
 
 .sub4 {
-  position:relative;
-  top:300px;
-  left:26.5%;
-  display:inline;
+  position: absolute;
+  top: 80%;
+  left: 56%;
+  width: 25%;
   animation-duration: 1.4s;
   animation-name: RightToLeft;
 }
 
+@media(min-width: 850px) and (max-width: 960px){
+  .photo-wrap{
+    height: 550px;
+  }
+
+  .sub1 {
+    position: absolute;
+    top: 0%;
+    left: 70%;
+    width: 20%;
+  }
+  
+  .sub2 {
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    width: 20%;
+  }
+  
+  .sub3 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    width: 20%;
+
+  }
+  
+  .sub4 {
+    position: absolute;
+    top: 75%;
+    left: 70%;
+    width: 20%;
+  }
+}
+
+@media(min-width: 960px) and (max-width: 1280px){
+  .photo-wrap{
+    height: 700px;
+  }
+
+  .sub1 {
+    position: absolute;
+    top: 0px;
+    left: 78%;
+    width: 23%;
+  }
+  
+  .sub2 {
+    position: absolute;
+    top: 200px;
+    left: 78%;
+    width: 23%;
+  }
+  
+  .sub3 {
+    position: absolute;
+    top: 400px;
+    left: 78%;
+    width: 23%;
+
+  }
+  
+  .sub4 {
+    position: absolute;
+    top: 620px;
+    left: 78%;
+    width: 23%;
+  }
+}
+
+@media(min-width: 1280px){
+  .photo-wrap{
+    height: 700px;
+  }
+  
+  .sub1 {
+    position: absolute;
+    top: 0px;
+    left: 85%;
+    width: 23%;
+  }
+  
+  .sub2 {
+    position: absolute;
+    top: 200px;
+    left: 85%;
+    width: 23%;
+  }
+  
+  .sub3 {
+    position: absolute;
+    top: 400px;
+    left: 85%;
+    width: 23%;
+
+  }
+  
+  .sub4 {
+    position: absolute;
+    top: 620px;
+    left: 85%;
+    width: 23%;
+  }
+}
 /*スクロール画像部分のプロバティ*/
 
 /*コンテンツ２のプロバティ*/
 .contents2{
   text-align: center;
+  padding-top: 50px;
 }
 
 .introduction {
